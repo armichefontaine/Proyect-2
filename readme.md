@@ -14,28 +14,116 @@ Project Support is an open source platform that enable users share causes they'r
 ### Usage
 * Run npm start:dev to start the application.
 * Connect to the API using Postman on port 7066.
-### API
-#### motores corredera
+### serpica
+#### usuarios
 | HTTP Verbs | Endpoints | Action |
 | --- | --- | --- |
-| POST | /api/user/signup | To sign up a new user account |
-| POST | /api/user/login | To login an existing user account |
-| POST | /api/causes | To create a new cause |
-| GET | /api/causes | To retrieve all causes on the platform |
-| GET | /api/causes/:causeId | To retrieve details of a single cause |
-| PATCH | /api/causes/:causeId | To edit the details of a single cause |
-| DELETE | /api/causes/:causeId | To delete a single cause |
+| POST | /serpica/usuarios | To create a new |
+| GET | /serpica/usuarios | muestra todos los campos|
+| GET | /serpica/usuarios/:Id | muestra solo un campo id  |
+| PATCH | /serpica/usuarios/:Id | actualiza el campo id|
+| DELETE | /serpica/usuarios/:Id | Elimina un campo id |
 
-#### motores corredera
+
+#### direccion
 | HTTP Verbs | Endpoints | Action |
 | --- | --- | --- |
-| POST | /api/user/signup | To sign up a new user account |
-| POST | /api/user/login | To login an existing user account |
-| POST | /api/causes | To create a new cause |
-| GET | /api/causes | To retrieve all causes on the platform |
-| GET | /api/causes/:causeId | To retrieve details of a single cause |
-| PATCH | /api/causes/:causeId | To edit the details of a single cause |
-| DELETE | /api/causes/:causeId | To delete a single cause |
+| POST | /serpica/direccion | To create a new |
+| GET | /serpica/direccion | muestra todos los campos|
+| GET | /serpica/direccion/:Id | muestra solo un campo id  |
+| PATCH | /serpica/direccion/:Id | actualiza el campo id|
+| DELETE | /serpica/direccion/:Id | Elimina un campo id |
+
+
+#### telefono
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/telefono | To create a new |
+| GET | /serpica/telefono  | muestra todos los campos|
+| GET | /serpica/telefono /:Id | muestra solo un campo id  |
+| PATCH | /serpica/telefono /:Id | actualiza el campo id|
+| DELETE | /serpica/telefono /:Id | Elimina un campo id |
+
+
+#### email
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/email | To create a new |
+| GET | /serpica/email  | muestra todos los campos|
+| GET | /serpica/email /:Id | muestra solo un campo id  |
+| PATCH | /serpica/email /:Id | actualiza el campo id|
+| DELETE | /serpica/email /:Id | Elimina un campo id |
+
+
+#### motor corredera
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/corredera | To create a new  |
+| GET | /serpica/corredera | muestra todos los campos |
+| GET | /serpica/corredera/:Id | muestra solo un campo id |
+| PATCH | /serpica/corredera/:Id | actualiza el campo id|
+| DELETE | /serpica/corredera/:Id | Elimina un campo id  |
+
+
+#### motor seccional 
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/seccional | To create a new  |
+| GET | /serpica/seccional | muestra todos los campos  |
+| GET | /serpica/seccional/:Id | muestra solo un campo id  |
+| PATCH | /serpica/seccional/:Id | actualiza el campo id|
+| DELETE | /serpica/seccional/:Id | Elimina un campo id |
+
+
+#### motor batiente
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/batiente | To create a new |
+| GET | /serpica/batiente | muestra todos los campos|
+| GET | /serpica/batiente/:Id | muestra solo un campo id  |
+| PATCH | /serpica/batiente/:Id | actualiza el campo id|
+| DELETE | /serpica/batiente/:Id | Elimina un campo id |
+
+
+#### accesorios mandos
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/mandos | To create a new |
+| GET | /serpica/mandos | muestra todos los campos|
+| GET | /serpica/mandos/:Id | muestra solo un campo id  |
+| PATCH | /serpica/mandos/:Id | actualiza el campo id|
+| DELETE | /serpica/mandos/:Id | Elimina un campo id |
+
+
+#### accesorios cremallera
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/cremallera | To create a new |
+| GET | /serpica/cremallera | muestra todos los campos|
+| GET | /serpica/cremallera/:Id | muestra solo un campo id  |
+| PATCH | /serpica/cremallera/:Id | actualiza el campo id|
+| DELETE | /serpica/cremallera/:Id | Elimina un campo id |
+
+
+#### accesorios sensores
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/sensores | To create a new |
+| GET | /serpica/sensores | muestra todos los campos|
+| GET | /serpica/sensores/:Id | muestra solo un campo id  |
+| PATCH | /serpica/sensores/:Id | actualiza el campo id|
+| DELETE | /serpica/sensores/:Id | Elimina un campo id |
+
+
+#### manuales tecnicos
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /serpica/manuales | To create a new |
+| GET | /serpica/manuales | muestra todos los campos|
+| GET | /serpica/manuales/:Id | muestra solo un campo id  |
+| PATCH | /serpica/manuales/:Id | actualiza el campo id|
+| DELETE | /serpica/manuales/:Id | Elimina un campo id |
+
 ### Technologies Used
 * [NodeJS](https://nodejs.org/) This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.
 * [ExpressJS](https://www.expresjs.org/) This is a NodeJS web application framework.
