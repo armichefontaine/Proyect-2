@@ -1,0 +1,29 @@
+{
+  "name": "proyect-2",
+  "version": "1.0.0",
+  "description": "Project Support is an open source platform that enable users share causes they're passionate about and actively involved with with the hopes of connecting with other users equally interested in working with them on the given cause.\r ### Project Support Features\r * Users can signup and login to their accounts\r * Public (non-authenticated) users can access all causes on the platform\r * Authenticated users can access all causes as well as create a new cause, edit their created cause and also delete what they've created.\r ### Installation Guide\r * Clone this repository [here](https://github.com/blackdevelopa/ProjectSupport.git).\r * The develop branch is the most stable branch at any given time, ensure you're working from it.\r * Run npm install to install all dependencies\r * You can either work with the default mLab database or use your locally installed MongoDB. Do configure to your choice in the application entry file.\r * Create an .env file in your project root folder and add your variables. See .env.sample for assistance.\r ### Usage\r * Run npm start:dev to start the application.\r * Connect to the API using Postman on port 7066.\r ### serpica\r #### usuarios\r | HTTP Verbs | Endpoints | Action |\r | --- | --- | --- |\r | POST | /serpica/usuarios | To create a new |\r | GET | /serpica/usuarios | muestra todos los campos|\r | GET | /serpica/usuarios/:Id | muestra solo un campo id  |\r | PATCH | /serpica/usuarios/:Id | actualiza el campo id|\r | DELETE | /serpica/usuarios/:Id | Elimina un campo id |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armichefontaine/Proyect-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armichefontaine/Proyect-2/issues"
+  },
+  "homepage": "https://github.com/armichefontaine/Proyect-2#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.29.0"
+  }
+}
